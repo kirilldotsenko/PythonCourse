@@ -1,0 +1,22 @@
+1 zadanie
+for a in range(1,101):
+	if a%3==0 and a%15!=0:
+		print('Fizz')
+	elif a%5==0 and a%15!=0:
+		print('Buzz')
+	elif a%15==0:
+		print('FizzBuzz')
+	else:
+		print(a)
+
+#2 zadanie
+a=int(input("Vvedite chislo:"))
+c=[]
+while a%10!=0:
+	b=int(a%10)
+	c.append(b)
+	#print(str(b)+"цифра равна"+str(b))
+	a=(a-b)/10
+c.reverse()
+for e in c:
+	print(str(e)+" цифра равна "+str(e))
